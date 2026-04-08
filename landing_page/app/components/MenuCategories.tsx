@@ -61,7 +61,7 @@ export default function MenuCategories() {
               fontFamily: "var(--font-montserrat)",
               fontWeight: 800,
               fontSize: "28px",
-              color: "#1A1A1A",
+              color: "#7B1818",
             }}>
               Menu
             </h3>

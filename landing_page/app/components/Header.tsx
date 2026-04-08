@@ -52,7 +52,7 @@ export default function Header() {
           </div>
 
           {/* Cart + Login */}
-          <div className="flex items-center gap-2" style={{ color: "#4A3228", fontSize: "13px" }}>
+          <div className="flex items-center gap-2" style={{ color: "#6B3A3A", fontSize: "13px" }}>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
               <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.3 2.3c-.6.6-.2 1.7.7 1.7H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
             </svg>
@@ -70,7 +70,7 @@ export default function Header() {
                style={{
                  fontFamily: "var(--font-montserrat)",
                  fontSize: "13.5px",
-                 color: "#3E2723",
+                 color: "#6B3A3A",
                }}>
               {link}
             </a>

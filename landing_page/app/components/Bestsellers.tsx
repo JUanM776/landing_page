@@ -67,7 +67,7 @@ export default function Bestsellers() {
         fontFamily: "var(--font-montserrat)",
         fontWeight: 800,
         fontSize: "22px",
-        color: "#1A1A1A",
+        color: "#7B1818",
         marginBottom: "18px",
       }}>
         Bestsellers from Across the Country
@@ -101,7 +101,7 @@ export default function Bestsellers() {
               <h4 style={{
                 fontSize: "13px",
                 fontWeight: 600,
-                color: "#1A1A1A",
+                color: "#3E2723",
                 lineHeight: 1.3,
                 minHeight: "34px",
               }}>
@@ -137,7 +137,7 @@ export default function Bestsellers() {
       <div className="flex justify-end mt-5">
         <button className="rounded-full text-white"
                 style={{
-                  backgroundColor: "#2D1810",
+                  backgroundColor: "#C62828",
                   fontSize: "12px",
                   fontWeight: 700,
                   padding: "10px 26px",
