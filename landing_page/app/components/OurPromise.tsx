@@ -162,8 +162,10 @@ export default function OurPromise() {
         <div className="rounded-2xl px-5 py-3 flex items-center gap-3"
              style={{ backgroundColor: "#FDEAEA", border: "1px solid #F0E4DD", gridRow: "3" }}>
           <div className="flex -space-x-2">
-            {["👩", "👨", "👩‍🦰", "👨‍🦱"].map((e, i) => (
-              <div key={i} className="rounded-full flex items-center justify-center" style={{ width: 36, height: 36, backgroundColor: "#E8D5C8", border: "2px solid #FDEAEA", fontSize: "18px" }}>{e}</div>
+            {[11, 25, 33, 47, 56].map((id, i) => (
+              <div key={i} className="rounded-full overflow-hidden" style={{ width: 36, height: 36, border: "2px solid #FDEAEA" }}>
+                <Image src={`https://i.pravatar.cc/72?img=${id}`} alt="User" width={36} height={36} className="w-full h-full object-cover" />
+              </div>
             ))}
           </div>
           <p style={{ fontFamily: "var(--font-dancing)", fontSize: "18px", color: "#3E2723" }}>Follow us on social!</p>
@@ -221,8 +223,10 @@ export default function OurPromise() {
         </div>
         <div className="rounded-2xl p-5 flex items-center gap-3" style={{ backgroundColor: "#FDEAEA", border: "1px solid #F0E4DD" }}>
           <div className="flex -space-x-2">
-            {["👩", "👨", "👩‍🦰", "👨‍🦱"].map((e, i) => (
-              <div key={i} className="rounded-full flex items-center justify-center" style={{ width: 36, height: 36, backgroundColor: "#E8D5C8", border: "2px solid #FDEAEA", fontSize: "18px" }}>{e}</div>
+            {[11, 25, 33, 47, 56].map((id, i) => (
+              <div key={i} className="rounded-full overflow-hidden" style={{ width: 36, height: 36, border: "2px solid #FDEAEA" }}>
+                <Image src={`https://i.pravatar.cc/72?img=${id}`} alt="User" width={36} height={36} className="w-full h-full object-cover" />
+              </div>
             ))}
           </div>
           <p style={{ fontFamily: "var(--font-dancing)", fontSize: "18px", color: "#3E2723" }}>Follow us on social!</p>
