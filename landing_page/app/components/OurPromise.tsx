@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const promises = [
   {
     label: "ON TIME\nDELIVERY",
@@ -42,12 +44,12 @@ const promises = [
 ];
 
 const galleryImages = [
-  { label: "Reviews", bg: "#E8D5C8" },
-  { label: "Rustic", bg: "#F0DDD0" },
-  { label: "Why the wait?\nForget it,\nit's managed", bg: "#D4B8A8" },
-  { label: "Chocolate\nCollection", bg: "#E0C8B8" },
-  { label: "", bg: "#F0DDD0" },
-  { label: "Cake with\nyour own quote", bg: "#E8D5C8" },
+  { label: "Reviews", bg: "#E8D5C8", image: "/previews.png" },
+  { label: "Rustic", bg: "#F0DDD0", image: "/Rustic.jpg" },
+  { label: "Why the wait?\nForget it,\nit's managed", bg: "#D4B8A8", image: "/why the wait.png" },
+  { label: "Chocolate\nCollection", bg: "#E0C8B8", image: "/chocolate_collection.png" },
+  { label: "", bg: "#F0DDD0", image: "/hola.png" },
+  { label: "Cake with\nyour own quote", bg: "#E8D5C8", image: "/cake with.png" },
 ];
 
 export default function OurPromise() {
@@ -120,7 +122,7 @@ export default function OurPromise() {
           <div className="rounded-2xl p-5 flex items-start gap-4"
                style={{ backgroundColor: "#FFF", border: "1px solid #F0E4DD" }}>
             <div className="shrink-0">
-              <span style={{ fontSize: "48px" }}>🎫</span>
+              <Image src="/Ticket.png" alt="Magical Ticket" width={80} height={80} className="object-contain" />
             </div>
             <div className="flex-1">
               <h4 style={{
@@ -185,11 +187,20 @@ export default function OurPromise() {
             <div key={i}
               className="relative rounded-2xl overflow-hidden cursor-pointer group"
               style={{ backgroundColor: item.bg, minHeight: "150px" }}>
-              {/* Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="group-hover:scale-105 transition-transform"
-                      style={{ fontSize: "48px", opacity: 0.3 }}>🎂</span>
-              </div>
+              {/* Image or placeholder */}
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.label || "Gallery"}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="group-hover:scale-105 transition-transform"
+                        style={{ fontSize: "48px", opacity: 0.3 }}>🎂</span>
+                </div>
+              )}
               {/* Label */}
               {item.label && (
                 <div className="absolute bottom-0 left-0 right-0 p-3"
