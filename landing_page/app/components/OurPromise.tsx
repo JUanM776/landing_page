@@ -18,7 +18,7 @@ const galleryItems = [
 
 export default function OurPromise() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-6">
+    <section className="px-4 md:px-8 py-6">
       {/* Title */}
       <h3 style={{
         fontFamily: "var(--font-montserrat)",

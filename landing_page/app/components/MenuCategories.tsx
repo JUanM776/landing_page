@@ -52,9 +52,8 @@ export default function MenuCategories() {
   const [active, setActive] = useState("DESSERTS");
 
   return (
-    <section className="max-w-5xl mx-auto px-4 md:px-6 -mt-5 relative z-20">
-      <div className="bg-white rounded-t-3xl shadow-md px-4 md:px-8 py-5 md:py-6">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+    <section className="px-4 md:px-8 py-5 md:py-6">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
 
           {/* Left side */}
           <div>
@@ -112,7 +111,6 @@ export default function MenuCategories() {
             ))}
           </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -10,9 +10,17 @@ export default function Home() {
     <div className="flex flex-col min-h-screen" style={{ backgroundColor: "#FFF5EE" }}>
       <Header />
       <HeroBanner />
-      <MenuCategories />
-      <Bestsellers />
-      <OurPromise />
+
+      {/* White/cream wrapper from Menu down to before Footer */}
+      <div
+        className="max-w-5xl mx-auto w-full px-0 -mt-5 relative z-20 rounded-t-3xl"
+        style={{ backgroundColor: "#FDF8F4" }}
+      >
+        <MenuCategories />
+        <Bestsellers />
+        <OurPromise />
+      </div>
+
       <Footer />
     </div>
   );
